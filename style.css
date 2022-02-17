@@ -1,0 +1,14 @@
+.wrapper{
+    display: grid;
+
+    grid-template-rows: repeat(3, 1fr); 
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: gold;
+    text-align: center;
+}
+
+.wrapper div{
+    background-color: aquamarine;
+    margin: 5%;
+
+}
