@@ -11,10 +11,10 @@
     gap: 20px;
     grid-template-rows: repeat(3, 1fr); 
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 1%;
+    
     background-color: white;
     height: 100vh; 
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 
 .block{
@@ -57,7 +57,7 @@
 
     border-style: solid;
     border-color:yellow ;
-    border-width: 2px;
+    border-width: 3px;
 
     position:absolute;
     
