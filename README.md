@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- 1)ctr+tab samlpe HTML -->
 
 Открой плз в соседнем окошке style.css 
@@ -50,3 +51,9 @@ http://jtauber.github.io/articles/css-hexagon.html
 
 
 
+=======
+1)ctr+tab samlpe HTML<br>
+2) Фигура заняла много времени. При изменении масштаба, в ней появляются бреши. Недоволен<br>
+3) 
+4) очень
+>>>>>>> 9f650d20cc29659ab0036b627013de3dffb72863
