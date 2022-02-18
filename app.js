@@ -15,5 +15,5 @@ function firstTrue(){  // длинновато написано
 
 const b = firstTrue()
 
-alert(b())
-alert(b())
+// alert(b())
+// alert(b())
