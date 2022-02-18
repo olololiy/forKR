@@ -3,23 +3,26 @@
     margin: 0; 
     padding: 0;
     /* скролл мешал */
+    box-sizing: border-box;
 }
 .wrapper{
     display: grid;
-    
+    /* min-width: 320px; */
+    gap: 20px;
     grid-template-rows: repeat(3, 1fr); 
     grid-template-columns: 1fr 1fr 1fr;
+    
     background-color: gold;
     height: 100vh; 
 }
 
 .block{
     background-color: rgb(109, 98, 179);
-    margin: 5%;
+    /* margin: 5%; */
     border-radius: 8px;
     /* text-align: center; */
     display: grid;
-    
+    /* grid-area: b; */
     position:relative;
 }
 
@@ -67,12 +70,10 @@
     width: 10px;
     height: 10px;
 
-     margin: 10px;
+    margin: 10px;
     padding: 0;
 
     justify-self: end;
-     
-
 
     border-style: solid;
     border-color:yellow ;
@@ -83,45 +84,51 @@
     
 }
 
-.figure{
-      
-    background-color: pink;
+.figure{   
+    background-color:transparent;
+    /* display: grid;
+    grid-template-rows: repeat(3, 1fr); 
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "t"
+    "m"
+    "b"; */
 
-    margin: 5%;
-
-    display: grid;
-    
-    position:relative;
 }
 
-
-/* .gecsaWrapper{
-    background-color: thistle;
-    width: 100%;
-    height: 100%;
-} */
-
-
-
-
 .top{
-    
+    /* display: grid;
+    grid-area: t; */
     height: 0;
-    border-bottom: 2em solid #6C6;
-    border-left: 1em solid lime; 
-    border-right: 1em solid red;
+    border-bottom: 30px solid rgb(109, 98, 179);
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    /* align-self: start; */
+    
 }
 
 .mid{
-    width: 100%;
-    height: 7em;
-    background-color: rgb(192, 102, 204);
+    /* display: grid;
+    grid-area: m; */
+    /* width: 100%; */
+    /* grid-row : 2; */
+    height: calc(100% - 60px);
+    /* height: 81.5%; */
+    /* height: 100%; */
+    background-color: rgb(109, 98, 179);
+    
+    /* align-self: stretch; */
+    /* align-self: center; */
 }
 
 .bottom{
-    height: 0;
-    border-top: 2em solid #6C6;
-    border-left: 1em solid rosybrown;
-    border-right: 1em solid blueviolet;
-
+    /* width: 100%; */
+    /* display: grid;
+    grid-area: b; */
+    height: 0px;
+    border-top: 30px solid rgb(109, 98, 179);
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    /* align-self: end; */
+    /* justify-self: end; */
 }
