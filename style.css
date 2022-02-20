@@ -16,6 +16,7 @@
     /* justify-content: space-between; */
 }
 
+
 .block{
     background-color: rgb(109, 98, 179);
     border-radius: 8px;
@@ -77,23 +78,23 @@
     
 }
 
-.figure{   
+.hexagon{
     /* background-color:transparent; */
 }
 
-.top{
+.hexagon__top{
     height: 0;
     border-bottom: 30px solid rgb(109, 98, 179);
     border-left: calc(10vw) solid transparent;
     border-right: calc(10vw) solid transparent;
 }
 
-.mid{
+.hexagon__mid{
     height: calc(100% - 60px);
     background-color: rgb(109, 98, 179);
 }
 
-.bottom{
+.hexagon__bottom{
     height: 0px;
     border-top: calc(30px) solid rgb(109, 98, 179);
     border-left: calc(10vw) solid transparent;
