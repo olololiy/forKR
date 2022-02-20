@@ -1,4 +1,4 @@
-function firstTrue(){  // длинновато написано
+function firstTrue(){
     let a = true;
 
     function changeA(){
@@ -26,12 +26,9 @@ let firstTrue1 = () => {
    else return undefined;
 }
 
+console.log(b())
+console.log(b())
+
 console.log(firstTrue1())
 console.log(firstTrue1())
 
-// alert(b())
-// alert(b())
-
-
-// больше в голову идей не пришло. 
-// В интернете тоже не нашел вариантов
