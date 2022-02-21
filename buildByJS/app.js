@@ -21,22 +21,21 @@ let makeBlocks = (numberOfBlocks) => {
             <div class="whiteQuadrateBottom"></div>
         </div>`
     }
-    let addBlock = () => {
+    let addBlock = (figure) => {
         container.insertAdjacentHTML("beforeend",
-            hexagon(i))
+            figure)
     }
 
     for (i = 1; i <= numberOfBlocks; i++){
         if (i === 5){
-            addBlock()
+            addBlock(hexagon(i))
         }
         else if(i % 3 === 0){
-            container.insertAdjacentHTML("beforeend",
-                rectangleWithQuads(i))
+            addBlock(rectangleWithQuads(i))
         }
         else {
-            container.insertAdjacentHTML("beforeend",
-                rectangle(i))
+            addBlock(rectangle(i))
+
         }
         }
 }
