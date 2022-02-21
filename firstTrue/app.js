@@ -4,15 +4,15 @@ function firstTrue(){
     function changeA(){
         if(a === true) {
             a = undefined;
-            return (true);
+            return true;
         }
         else{
-            return (undefined);
+            return undefined;
         }
     }
     return changeA;
 }
-debugger;
+// debugger;
 const b = firstTrue()
 console.log(b())
 console.log(b())

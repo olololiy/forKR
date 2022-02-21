@@ -16,9 +16,9 @@ let makeBlocks = (numberOfBlocks) => {
     }
     let rectangleWithQuads = (i) => {
         return `<div class="block">
-            <div class="whiteQuadrateTop"> </div>
+            <div class="quadrature quadrature_left-top quadrature_white-yellow"> </div>
             <p class="num">${i}</p>
-            <div class="whiteQuadrateBottom"></div>
+            <div class="quadrature quadrature_right-bottom quadrature_white-yellow"></div>
         </div>`
     }
     let addBlock = (figure) => {

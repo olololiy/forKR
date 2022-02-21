@@ -1,6 +1,6 @@
 
 *{
-    margin: 0; 
+    margin: 0;
     padding: 0;
     /* скролл мешал */
     box-sizing: border-box;
@@ -8,10 +8,11 @@
 .container{
     display: grid;
     /* gap: 20px; */
-    grid-template-rows: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr 1fr 1fr;
+
     background-color: white;
-    height: 100vh; 
+    height: 100vh;
     /* justify-content: space-between; */
 }
 
@@ -26,11 +27,11 @@
 }
 
 .num{
-    /* в этом месте цифра стояла рядом с восмиугольником. 
+    /* в этом месте цифра стояла рядом с восмиугольником.
     Абсолют выводит тег поверх верстки */
     position:absolute;
-    
-    align-self: center; 
+
+    align-self: center;
     /* повертикали */
     justify-self: center;
     /* погоризонтали */
@@ -38,10 +39,7 @@
     background-color: transparent;
 }
 
-.whiteQuadrateTop{
-
-    background-color: white;
-
+.quadrature{
     width: 10px;
     height: 10px;
 
@@ -49,33 +47,20 @@
     padding: 0;
 
     border-style: solid;
-    border-color:yellow ;
-    border-width: 3px;  /* для покраски в желтый */
-
-    /* position:absolute; */
-
+    border-width: 3px;
 }
 
-.whiteQuadrateBottom{
+.quadrature_left-top{
 
-
-    background-color: white;
-
-    width: 10px;
-    height: 10px;
-
-    margin: 10px;
-    padding: 0;
-
+}
+.quadrature_right-bottom{
     justify-self: end;
-
-    border-style: solid;
-    border-color:yellow ;
-    border-width: 3px;
-
     position:absolute;
     bottom:0;
-
+}
+.quadrature_white-yellow{
+    background-color: white;
+    border-color:yellow ;
 }
 
 .hexagon{
@@ -98,6 +83,6 @@
 .hexagon__bottom{
     height: 0;
     border-top: 30px solid rgb(109, 98, 179);
-    border-left: 10vw solid transparent;
-    border-right: 10vw solid transparent;
+    border-left: calc(10vw) solid transparent;
+    border-right: calc(10vw) solid transparent;
 }
