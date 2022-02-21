@@ -1,7 +1,8 @@
 let makeBlocks = (numberOfBlocks) => {
     let i = 1;
     let container = document.querySelector('.container')
-    let hexagon = `<div class="block" style="background-color: transparent;">
+    let hexagon = (i) => {
+        return`<div class="block" style="background-color: transparent;">
             <p class="num">${i}</p>
             <div class="hexagon">
                 <div class="hexagon__top"></div>
@@ -9,28 +10,30 @@ let makeBlocks = (numberOfBlocks) => {
                 <div class="hexagon__bottom"></div>
             </div>
         </div>`
-    let blockWithQuadratures =  `<div class="block">
-            <div class="quadrature quadrature_left-top quadrature_white-yellow"> </div>
-            <p class="num">${i}</p>
-            <div class="quadrature quadrature_right-bottom quadrature_white-yellow"></div>
-        </div>`;
-    for (i = 1; i <= numberOfBlocks; i++){
-
-        if (i === 5){
-            container.insertAdjacentHTML("beforeend",
-                `${hexagon}`)
-        }
-        else if(i % 3 === 0){
-            container.insertAdjacentHTML("beforeend",
-                `<div class="block">
+    }
+    let rectangle = (i) => {
+        return ` <div class=\"block\"><p class="num">${i}</p></div>`
+    }
+    let rectangleWithQuads = (i) => {
+        return `<div class="block">
             <div class="whiteQuadrateTop"> </div>
             <p class="num">${i}</p>
             <div class="whiteQuadrateBottom"></div>
-        </div>`)
+        </div>`
+    }
+
+    for (i = 1; i <= numberOfBlocks; i++){
+        if (i === 5){
+            container.insertAdjacentHTML("beforeend",
+                hexagon(i))
+        }
+        else if(i % 3 === 0){
+            container.insertAdjacentHTML("beforeend",
+                rectangleWithQuads(i))
         }
         else {
             container.insertAdjacentHTML("beforeend",
-                ` <div class=\"block\"><p class=\"num\">${i}</p></div>`)
+                rectangle(i))
         }
         }
 }

@@ -1,5 +1,5 @@
 firstTrue: сделано через замыкание
-
+    
 
 firstTrue1:
 intovariable является ссылкой на 
