@@ -23,7 +23,10 @@
     display: grid;
     position:relative;
     margin: 10px;
+}
 
+.block_transparent{
+    background-color: transparent;
 }
 
 .num{

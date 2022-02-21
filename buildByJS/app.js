@@ -2,7 +2,7 @@ let makeBlocks = (numberOfBlocks) => {
     let i = 1;
     let container = document.querySelector('.container')
     let hexagon = (i) => {
-        return `<div class="block" style="background-color: transparent;">
+        return `<div class="block block_transparent">
             <p class="num">${i}</p>
             <div class="hexagon">
                 <div class="hexagon__top"></div>

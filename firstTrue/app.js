@@ -23,7 +23,7 @@ let variable = [1];
 
 let firstTrue1 = () => {
    let intoVariable = variable;
-   if (intoVariable == true){
+   if (intoVariable == true){ //при строгом будет сравниваться тип данных. array === boolean false
        intoVariable.pop()
        return true;
    }
