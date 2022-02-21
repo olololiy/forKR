@@ -10,7 +10,6 @@
     /* gap: 20px; */
     grid-template-rows: repeat(3, 1fr); 
     grid-template-columns: 1fr 1fr 1fr;
- 
     background-color: white;
     height: 100vh; 
     /* justify-content: space-between; */
@@ -97,8 +96,8 @@
 }
 
 .hexagon__bottom{
-    height: 0px;
+    height: 0;
     border-top: 30px solid rgb(109, 98, 179);
-    border-left: calc(10vw) solid transparent;
-    border-right: calc(10vw) solid transparent;
+    border-left: 10vw solid transparent;
+    border-right: 10vw solid transparent;
 }
