@@ -1,6 +1,6 @@
 function firstTrue(){
     let a = true;
-
+ 
     function changeA(){
         if(a === true) {
             a = undefined;
@@ -12,8 +12,12 @@ function firstTrue(){
     }
     return changeA;
 }
-
+debugger;
 const b = firstTrue()
+console.log(b())
+console.log(b())
+
+
 
 let variable = [1];
 
@@ -25,9 +29,6 @@ let firstTrue1 = () => {
    }
    else return undefined;
 }
-
-console.log(b())
-console.log(b())
 
 console.log(firstTrue1())
 console.log(firstTrue1())

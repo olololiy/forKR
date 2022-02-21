@@ -63,42 +63,6 @@
     border-color:yellow ;
 }
 
-/*.whiteQuadrateTop{*/
-/*    background-color: white;*/
-
-/*    width: 10px;*/
-/*    height: 10px;*/
-
-/*    margin: 10px;*/
-/*    padding: 0;*/
-
-/*    border-style: solid;*/
-/*    border-color:yellow ;*/
-/*    border-width: 3px;  !* для покраски в желтый *!*/
-/*    !* position:absolute; *!*/
-/*}*/
-
-/*.whiteQuadrateBottom{*/
-
-/*    background-color: white;*/
-
-/*    width: 10px;*/
-/*    height: 10px;*/
-
-/*    margin: 10px;*/
-/*    padding: 0;*/
-
-/*    justify-self: end;*/
-
-/*    border-style: solid;*/
-/*    border-color:yellow ;*/
-/*    border-width: 3px;*/
-
-/*    position:absolute;*/
-/*    bottom:0;*/
-
-/*}*/
-
 .hexagon{
     /* background-color:transparent; */
     overflow: hidden;
@@ -117,7 +81,7 @@
 }
 
 .hexagon__bottom{
-    height: 0px;
+    height: 0;
     border-top: 30px solid rgb(109, 98, 179);
     border-left: calc(10vw) solid transparent;
     border-right: calc(10vw) solid transparent;
